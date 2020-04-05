@@ -60,7 +60,7 @@ const makeDependencisGraph = (entry)=>{
 
 const generateCode = (entry)=>{
   const graph = JSON.stringify(makeDependencisGraph(entry))
-
+  // 编写require 和exports方法
   return `
     (function(graph){
       function require(module){
